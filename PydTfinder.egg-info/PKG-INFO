@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: PydTfinder
+Version: 1.0.0
+Summary: ::A tool to find the phase eq temperature at a given pressure with a given ΔT value::
+Home-page: https://pypi.org/project/dTfinder/
+Author: wjgoarxiv
+Author-email: woo_go@yahoo.com
+License: MIT
+Requires-Python: >=3.8
+
+Reupload
