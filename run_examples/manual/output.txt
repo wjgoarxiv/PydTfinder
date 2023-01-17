@@ -1,3 +1,51 @@
+
+
+ ___         _ _____ __ _         _         
+| _ \_  _ __| |_   _/ _(_)_ _  __| |___ _ _ 
+|  _/ || / _` | | ||  _| | ' \/ _` / -_) '_|
+|_|  \_, \__,_| |_||_| |_|_||_\__,_\___|_|  
+     |__/                                   
+
+
+
+
+------------------------------------------------
+If you have any questions, please send your questions to my email.
+
+Or, please suggest errors and areas that need updating.
+
+ 📨 woo_go@yahoo.com
+
+
+
+Visit https://github.com/wjgoarxiv/pydtfinder for more information.
+------------------------------------------------
+
+
+------------------------------------------------
+INFO The options that you selected are as follows:
+INFO The input type is manual
+INFO The temperature difference is 6.2 [unit: K]
+INFO The degree of the regression is 3
+INFO The number of points that will be expressed in your plot is 4
+INFO The output type is png
+INFO The directory location of the csv file is ./
+INFO The legend title of your Phase EQ input data is 'Hydrogen Sulfide (Bond and Russel (1949))'
+
+
+INFO If these options are not correct, please adjust them.
+------------------------------------------------
+
+
+
+INFO If you have a prepared csv file, please use the `pydtfinder -it csv` command.
+
+INFO For more information, please enter `pydtfinder -h` command.
+
+
+
+INFO Please enter the TEMPERATURE values (K) separated by comma: 283.2, 291.2, 299.7, 302.7
+INFO Please enter the PRESSURE values (MPa) separated by comma: 0.310, 0.710, 1.496, 2.241
 INFO The input temperature values are:  [283.2, 291.2, 299.7, 302.7] [unit: K]
 INFO The input pressure values are:  [0.31, 0.71, 1.5, 2.24] [unit: MPa]
 INFO Your desired temperature at 0.31 MPa is 277.00 K (T = 283.20 K - ΔT = 6.20 K)
