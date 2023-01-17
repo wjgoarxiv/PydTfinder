@@ -1,5 +1,5 @@
 # **PydTfinder**
-> ::A tool to find the phase eq temperature at a given pressure with a given ΔT value::
+> ::A tool to find the phase equilibrium temperature at a given pressure with a given ΔT value::
 
 <a href="https://www.buymeacoffee.com/woojingo" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 120px !important;" ></a>
 
