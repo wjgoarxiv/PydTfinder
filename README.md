@@ -3,7 +3,7 @@
 
 <a href="https://www.buymeacoffee.com/woojingo" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 120px !important;" ></a>
 
-**PydTfinder** is a cutting-edge and user-friendly tool that makes it easy to pinpoint the precise temperature and pressure points where phase transitions occur in your system. If you're working with <u>Hydrate-Liquid-Vapor (HLV) equilibrium</u> systems, PydTfinder is the perfect tool to help you find the exact equilibrium point of interest you need. By utilizing a temperature difference input and a highly accurate polynomial regression algorithm, PydTfinder is able to <u>identify the precise points of phase transition with pinpoint accuracy</u>. This powerful tool also offers a wide range of customization options, including `manual input`, `csv file input`, `output type`, `degree of regression`, `number of points` displayed in the plot, and `directory location` of the csv file, allowing you to tailor the tool to your specific needs. For researchers, engineers, and scientists working in the field of thermodynamics, phase equilibrium, and phase transition, PydTfinder is an essential tool that will save you time and increase your productivity.
+**PydTfinder** is a cutting-edge and user-friendly tool that makes it easy to pinpoint the precise temperature and pressure points where the phase equilibrium shifting occurs in your system. If you're working with <u>Hydrate-Liquid-Vapor (HLV) equilibrium</u> systems, PydTfinder is the perfect tool to help you find the exact equilibrium point of interest you need. By utilizing a temperature difference input and a highly accurate polynomial regression algorithm, PydTfinder is able to <u>identify the precise points of phase transition with pinpoint accuracy</u>. This powerful tool also offers a wide range of customization options, including `manual input`, `csv file input`, `output type`, `degree of regression`, `number of points` displayed in the plot, and `directory location` of the csv file, allowing you to tailor the tool to your specific needs. For researchers, engineers, and scientists working in the field of thermodynamics, phase equilibrium, and phase transition, PydTfinder is an essential tool that will save you time and increase your productivity.
 
 ## **Features**
 - Plot the phase equilibrium data and the regression line
@@ -65,14 +65,14 @@ PydTfinder can handle the manual input data from user.
 **Input**
 ```
 pydtfinder -it manual -dt 6.2 -g 3 -n 4 -o png -l "Hydrogen Sulfide (Bond and Russel (1949))"
+INFO Please enter the TEMPERATURE values (K) separated by comma: 283.2, 291.2, 299.7, 302.7
+INFO Please enter the PRESSURE values (MPa) separated by comma: 0.310, 0.710, 1.496, 2.241
 ```
 
 PydTfinder exhibited the below messages and plot.
 
 **Output**
 ```
-INFO Please enter the TEMPERATURE values (K) separated by comma: 283.2, 291.2, 299.7, 302.7
-INFO Please enter the PRESSURE values (MPa) separated by comma: 0.310, 0.710, 1.496, 2.241
 INFO The input temperature values are:  [283.2, 291.2, 299.7, 302.7] [unit: K]
 INFO The input pressure values are:  [0.31, 0.71, 1.5, 2.24] [unit: MPa]
 INFO Your desired temperature at 0.31 MPa is 277.00 K (T = 283.20 K - ΔT = 6.20 K)
@@ -86,7 +86,7 @@ INFO The figure is saved as "DeltaT=6.2K.png"
 
 **Plot (Manual input)**
 
-<img src="./run_examples/manual/DeltaT=6.2K.png" height="50%" width="50%">
+<img src="./run_examples/manual/DeltaT=6.2K.png" height="60%" width="60%">
 
 ### **(2) CSV input**
 PydTfinder can also handle the `.csv` file data from user. 
@@ -122,7 +122,7 @@ INFO The figure is saved as "DeltaT=6.0K.pdf"
 ```
 **Plot (CSV input)**
 
-<img src="./run_examples/csv/DeltaT=6.0K.png" height="50%" width="50%">
+<img src="./run_examples/csv/DeltaT=6.0K.png" height="60%" width="60%">
 
 ## **Contact**
 If you have any questions or suggestions, please visit the GitHub repository at https://github.com/wjgoarxiv/pydtfinder for more information.
