@@ -86,11 +86,11 @@ INFO Your desired temperature at 2.24 MPa is 296.50 K (T = 302.70 K - ΔT = 6.20
 INFO The figure is saved as "DeltaT=6.2K.png"
 ```
 
-**Plot (.png)**
+**Plot (Manual input)**
 
 <img src="./run_examples/manual/DeltaT=6.2K.png" height="50%" width="50%">
 
-### **(2) Csv input**
+### **(2) CSV input**
 PydTfinder can also handle the `.csv` file data from user. 
 
 **Input**
@@ -122,7 +122,7 @@ INFO Your desired temperature at 4.37 MPa is 276.90 K (T = 282.90 K - ΔT = 6.00
 
 INFO The figure is saved as "DeltaT=6.0K.pdf"
 ```
-**Plot (.pdf)**
+**Plot (CSV input)**
 
 <img src="./run_examples/csv/DeltaT=6.0K.png" height="50%" width="50%">
 
