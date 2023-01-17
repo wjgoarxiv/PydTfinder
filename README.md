@@ -124,7 +124,7 @@ INFO The figure is saved as "DeltaT=6.0K.pdf"
 ```
 **Plot (.pdf)**
 
-<embed src="./run_examples/csv/DeltaT=6.0K.pdf" height="50%" width="50%">
+<img src="./run_examples/csv/DeltaT=6.0K.png" height="50%" width="50%">
 
 ## **Contact**
 If you have any questions or suggestions, please visit the GitHub repository at https://github.com/wjgoarxiv/pydtfinder for more information.
