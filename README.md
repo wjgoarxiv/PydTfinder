@@ -65,8 +65,6 @@ PydTfinder can handle the manual input data from user.
 **Input**
 ```
 pydtfinder -it manual -dt 6.2 -g 3 -n 4 -o png -l "Hydrogen Sulfide (Bond and Russel (1949))"
-INFO Please enter the TEMPERATURE values (K) separated by comma: 283.2, 291.2, 299.7, 302.7
-INFO Please enter the PRESSURE values (MPa) separated by comma: 0.310, 0.710, 1.496, 2.241
 ```
 
 PydTfinder exhibited the below messages and plot.
