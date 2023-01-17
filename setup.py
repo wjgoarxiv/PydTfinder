@@ -7,7 +7,7 @@ setup(
 	  long_description= 'Reupload', 
 	  author='wjgoarxiv',
 	  author_email='woo_go@yahoo.com',
-	  url='https://pypi.org/project/dTfinder/',
+	  url='https://pypi.org/project/PydTfinder/',
 	  license='MIT',
 	  py_modules=['PydTfinder'],
 	  python_requires='>=3.8', #python version required
