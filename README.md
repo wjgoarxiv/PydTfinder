@@ -53,7 +53,7 @@ pydtfinder -h
 | `--delta_t` | `-dt` | 5 | The temperature difference between the two curves in K |
 | `--degree` | `-g` | 5 | The degree of the regression; the higher the degree, the more accurate the regression |
 | `--num_point` | `-n` | 10 | The number of points that will be expressed in the plot |
-| `--output` | `-o` | png | The file type of the output file. The options are: png, pdf, svg, and eps |
+| `--output` | `-o` | png | The file type of the output file. The options are: `png`, `pdf`, `svg`, and `eps` |
 | `--directory` | `-d` | "./" | The directory location of the csv file |
 | `--legend` | `-l` | "Your Phase EQ input" | The legend title of your Phase EQ input data |
 | `--version` | `-v` | | Show the version of the tool |
