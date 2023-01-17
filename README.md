@@ -7,7 +7,7 @@
 
 ## **Features**
 - Plot the phase equilibrium data and the regression line
-- Also plot the parallel line according to the temperature difference ($\Delta T$ value)
+- Also plot the parallel line according to the temperature difference (ΔT value)
 - Input options include `manual` input or input from a `csv` file
 - Allows for adjusting the degree of the regression (the higher the degree, the more accurate the regression) and the number of points displayed in the plot
 - Output options include `png`, `pdf`, `svg`, and `eps` file types
