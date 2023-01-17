@@ -23,27 +23,27 @@ PydTfinder is a cutting-edge and user-friendly tool that makes it easy to pinpoi
 
 ## **Installation**
 ```
-$ pip install pydtfinder
+pip install pydtfinder
 ```
 or
 ```
-$ pip3 install pydtfinder
+pip3 install pydtfinder
 ```
 
 ## **Uninstallation**
 ```
-$ pip uninstall pydtfinder
+pip uninstall pydtfinder
 ```
 or
 ```
-$ pip3 uninstall pydtfinder
+pip3 uninstall pydtfinder
 ```
 
 ## **Usage**
 The tool can be run using the command line 
 
 ```
-$ pydtfinder
+pydtfinder -h
 ```
 
 ### **Optional arguments**
