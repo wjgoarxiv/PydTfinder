@@ -11,7 +11,7 @@ do
 done
 
 # LOOP 2: the number of points modifications
-for NP in {1..4} # Manipulate the number of points here 
+for NP in {5..10} # Manipulate the number of points here 
 do
 	echo 0 | python3 PydTfinder.py -it csv -n $NP -l NP_modifications_${NP}points
 done
