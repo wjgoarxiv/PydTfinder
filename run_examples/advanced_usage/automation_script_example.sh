@@ -7,13 +7,13 @@
 # LOOP 1: Delta T modifications
 for DT in 1 2 3 5 10 20 30 50 # Manipulate the delta T values here
 do
-	echo 0 | python3 PydTfinder.py -it csv -dt $DT -l delT_modifications_${DT}K
+	echo 0 | pydtfinder -it csv -dt $DT -l delT_modifications_${DT}K
 done
 
 # LOOP 2: The number of points modifications
 for NP in {5..10} # Manipulate the number of points here 
 do
-	echo 0 | python3 PydTfinder.py -it csv -n $NP -l NP_modifications_${NP}points
+	echo 0 | pydtfinder -it csv -n $NP -l NP_modifications_${NP}points
 done
 
 echo "INFO All automations have been completed!"
