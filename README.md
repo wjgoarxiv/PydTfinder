@@ -73,6 +73,8 @@ PydTfinder exhibited the below messages and plot.
 
 **Output**
 ```
+INFO Please enter the TEMPERATURE values (K) separated by comma: 283.2, 291.2, 299.7, 302.7
+INFO Please enter the PRESSURE values (MPa) separated by comma: 0.310, 0.710, 1.496, 2.241
 INFO The input temperature values are:  [283.2, 291.2, 299.7, 302.7] [unit: K]
 INFO The input pressure values are:  [0.31, 0.71, 1.5, 2.24] [unit: MPa]
 INFO Your desired temperature at 0.31 MPa is 277.00 K (T = 283.20 K - ΔT = 6.20 K)
@@ -81,12 +83,12 @@ INFO Your desired temperature at 1.60 MPa is 294.07 K (T = 300.27 K - ΔT = 6.20
 INFO Your desired temperature at 2.24 MPa is 296.50 K (T = 302.70 K - ΔT = 6.20 K)
 
 
-INFO The figure is saved as "DeltaT=6.2K.png"
+INFO The figure is saved as "PLOT_DeltaT=6.2K_Deg=3_NP=4_Legend="Hydrogen Sulfide (Bond and Russel (1949))".png"
 ```
 
 **Plot (Manual input)**
 
-<img src="./run_examples/manual/DeltaT=6.2K.png" height="60%" width="60%">
+<img src="https://github.com/wjgoarxiv/PydTfinder/blob/5526cf7d591041d09907ebc6fbd3c3b0c39db7f6/run_examples/manual/PLOT_DeltaT=6.2K_Deg=3_NP=4_Legend=%22Hydrogen%20Sulfide%20(Bond%20and%20Russel%20(1949))%22.png" height="60%" width="60%">
 
 ### **(2) CSV input**
 PydTfinder can also handle the `.csv` file data from user. 
@@ -119,11 +121,11 @@ INFO Your desired temperature at 3.95 MPa is 276.34 K (T = 282.34 K - ΔT = 6.00
 INFO Your desired temperature at 4.37 MPa is 276.90 K (T = 282.90 K - ΔT = 6.00 K)
 
 
-INFO The figure is saved as "DeltaT=6.0K.pdf"
+INFO The figure is saved as "PLOT_DeltaT=6.0K_Deg=4_NP=8_Legend="Adisasmito CO2 (1991)".png"
 ```
 **Plot (CSV input)**
 
-<img src="./run_examples/csv/DeltaT=6.0K.png" height="60%" width="60%">
+<img src="https://github.com/wjgoarxiv/PydTfinder/blob/5526cf7d591041d09907ebc6fbd3c3b0c39db7f6/run_examples/csv/PLOT_DeltaT=6.0K_Deg=4_NP=8_Legend=%22Adisasmito%20CO2%20(1991)%22.png" height="60%" width="60%">
 
 ## **Contact**
 If you have any questions or suggestions, please visit the GitHub repository at https://github.com/wjgoarxiv/pydtfinder for more information.
