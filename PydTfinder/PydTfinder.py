@@ -12,6 +12,7 @@ import numpy as np
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
 import time
+import plotext as pltxt
 
 # Print the title 
 os.system('cls' if os.name == 'nt' else 'clear')
@@ -36,7 +37,7 @@ parser.add_argument('-n', '--num_point', type=int, default=10, help='The number 
 parser.add_argument('-o', '--output', type=str, default='png', help='The file type of the output file. The options are: png, pdf, svg, and eps (default = png)')
 parser.add_argument('-d', '--directory', type=str, default='./', help='The directory location of the csv file (default = ./')
 parser.add_argument('-l', '--legend', type=str, default='Your Phase EQ input', help='The legend title of your Phase EQ input data (default = Your Phase EQ input)')
-parser.add_argument('-v', '--version', action='version', version='%(prog)s 1.0.0')
+parser.add_argument('-v', '--version', action='version', version='%(prog)s 1.1.0')
 
 # Read the arguments
 args = parser.parse_args()
@@ -175,7 +176,10 @@ def main():
     # add labels
     plt.xlabel('Temperature (K)')
     plt.ylabel('Pressure (MPa)')
-    plt.xlim(min_x - 0.7 * diff_x, max_x + 0.5 * diff_x)
+
+    # Adjust the x scale
+    plt.xlim(min_x - delta_t - 0.4 * diff_x, max_x + 0.3 * diff_x)
+    # Adjust the y scale 
     plt.ylim(min_y - 0.2 * diff_y, max_y + 0.2 * diff_y)
     plt.minorticks_on()
     ########## Polynomial regression ##########
@@ -203,32 +207,35 @@ def main():
         # The distance should be marked with dotted red line too.
         plt.scatter(x-delta_t, pressure, color='red', marker='D', label='$\Delta$T = -'+str(delta_t)+' K')
 
-        # Write the "delta_t" K point information (temperature, pressure) on that point.
-        plt.text(x, pressure, '({:.2f}, {:.2f})'.format(x[0][0], pressure), color='blue', size=12)
-        plt.text(x-delta_t, pressure, '({:.2f}, {:.2f})'.format(x[0][0]-delta_t, pressure), color='red', size=12)
+        # Write the (temperature, pressure) on the regressed curve
+        plt.text(x, pressure, '({:.2f}, {:.2f})'.format(x[0][0], pressure), color='blue', size=11, verticalalignment='bottom')
+
+        # Write the "delta_t" K point information (temperature, pressure) on that point
+        plt.text(x-delta_t, pressure, '({:.2f}, {:.2f})'.format(x[0][0]-delta_t, pressure), color='red', size=11, horizontalalignment='right', verticalalignment='top')
 
         # Add the legend info. 
         plt.legend([str(userlegend), 'Regressed', '$\Delta$T = 0 K', '$\Delta$T = '+str(delta_t)+' K'], loc='upper left')
 
         # Dot lines
-        plt.axvline(x=x-delta_t, color='red', linestyle='dotted', alpha=0.5)
-        plt.axhline(y=pressure, color='red', linestyle='dotted', alpha=0.5)
+        plt.axvline(x=x-delta_t, color='red', linestyle='dotted', alpha=0.5, linewidth=0.5)
+        plt.axhline(y=pressure, color='red', linestyle='dotted', alpha=0.5, linewidth=0.5)
+
     plt.tight_layout()
 
     print('\n')
     # Save the figure according to the filetype option
     if output_type == "png":
-        plt.savefig('DeltaT='+str(delta_t)+'K.png', dpi=300)
-        print('INFO The figure is saved as "DeltaT='+str(delta_t)+'K.png"')
+        plt.savefig('PLOT_DeltaT='+str(delta_t)+'K_Deg='+str(degree)+'_NP='+str(num_point)+'_Legend="'+str(userlegend)+'".png', dpi=300)
+        print('INFO The figure is saved as "PLOT_DeltaT='+str(delta_t)+'K_Deg='+str(degree)+'_NP='+str(num_point)+'_Legend="'+str(userlegend)+'".png"')
     elif output_type == "pdf":
-        plt.savefig('DeltaT='+str(delta_t)+'K.pdf')
-        print('INFO The figure is saved as "DeltaT='+str(delta_t)+'K.pdf"')
+        plt.savefig('PLOT_DeltaT='+str(delta_t)+'K_Deg='+str(degree)+'_NP='+str(num_point)+'_Legend="'+str(userlegend)+'".pdf')
+        print('INFO The figure is saved as "PLOT_DeltaT='+str(delta_t)+'K_Deg='+str(degree)+'_NP='+str(num_point)+'_Legend="'+str(userlegend)+'".pdf"')
     elif output_type == "svg":
-        plt.savefig('DeltaT='+str(delta_t)+'K.svg')
-        print('INFO The figure is saved as "DeltaT='+str(delta_t)+'K.svg"')
+        plt.savefig('PLOT_DeltaT='+str(delta_t)+'K_Deg='+str(degree)+'_NP='+str(num_point)+'_Legend="'+str(userlegend)+'".svg')
+        print('INFO The figure is saved as "PLOT_DeltaT='+str(delta_t)+'K_Deg='+str(degree)+'_NP='+str(num_point)+'_Legend="'+str(userlegend)+'".svg"')
     elif output_type == "eps":
-        plt.savefig('DeltaT='+str(delta_t)+'K.eps')
-        print('INFO The figure is saved as "DeltaT='+str(delta_t)+'K.eps"')
+        plt.savefig('PLOT_DeltaT='+str(delta_t)+'K_Deg='+str(degree)+'_NP='+str(num_point)+'_Legend="'+str(userlegend)+'".eps')
+        print('INFO The figure is saved as "PLOT_DeltaT='+str(delta_t)+'K_Deg='+str(degree)+'_NP='+str(num_point)+'_Legend="'+str(userlegend)+'".eps"')
     else:
         print('ERROR The output type is not correct. Please check the output type again.')
         print('ERROR The output type should be either `png`, `pdf`, `svg`, or `eps`.')
