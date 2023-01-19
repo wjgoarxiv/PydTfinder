@@ -5,6 +5,10 @@
 
 **PydTfinder** is a cutting-edge and user-friendly tool that makes it easy to pinpoint the precise temperature and pressure points where the phase equilibrium shifting occurs in your system. If you're working with <u>Hydrate-Liquid-Vapor (HLV) equilibrium</u> systems, PydTfinder is the perfect tool to help you find the exact equilibrium point of interest you need. By utilizing a temperature difference input and a highly accurate polynomial regression algorithm, PydTfinder is able to <u>identify the precise points of phase transition with pinpoint accuracy</u>. This powerful tool also offers a wide range of customization options, including `manual input`, `csv file input`, `output type`, `degree of regression`, `number of points` displayed in the plot, and `directory location` of the csv file, allowing you to tailor the tool to your specific needs. For researchers, engineers, and scientists working in the field of thermodynamics, phase equilibrium, and phase transition, PydTfinder is an essential tool that will save you time and increase your productivity.
 
+Changing the number of points | Changing the delta T values
+:-------------------------:|:-------------------------:
+<img src="https://github.com/wjgoarxiv/PydTfinder/blob/fe57b9ed7bb89a4b61653fdecc586cf836261b9c/NP_anime.gif"/> | <img src="https://github.com/wjgoarxiv/PydTfinder/blob/fe57b9ed7bb89a4b61653fdecc586cf836261b9c/delT_anime.gif"/>
+
 ## **Features**
 - Plot the phase equilibrium data and the regression line
 - Also plot the parallel line according to the temperature difference (ΔT value)
@@ -127,35 +131,6 @@ INFO The figure is saved as "PLOT_DeltaT=6.0K_Deg=4_NP=8_Legend="Adisasmito CO2 
 
 <img src="https://github.com/wjgoarxiv/PydTfinder/blob/5526cf7d591041d09907ebc6fbd3c3b0c39db7f6/run_examples/csv/PLOT_DeltaT=6.0K_Deg=4_NP=8_Legend=%22Adisasmito%20CO2%20(1991)%22.png" height="60%" width="60%">
 
-## **EXTRA: For advanced users**
-### **Automating your process!**
-> Get multiple plots at once.
-
-By utilizing the shell script, you can get multiple plots at once. 
-I've prepared the example shell script in the `PydTfinder/run_examples/advanced_usage/` folder. 
-Download the [`automation_script_example.sh`](https://github.com/wjgoarxiv/PydTfinder/blob/e9f406fee0f931369474a524b5531e398e2d96cd/run_examples/advanced_usage/automation_script_example.sh). Consecutively, authorize it to be executable by typing the below command in the terminal.
-
-```
-chmod +x automation_script_example.sh
-```
-
-Then, you can run the shell script by typing the below command in the terminal.
-
-```
-./automation_script_example.sh
-```
-
-### **Automation results**
-In the demo run, the [`Patil C3H8 (1987).csv`](https://github.com/wjgoarxiv/PydTfinder/blob/e9f406fee0f931369474a524b5531e398e2d96cd/csv_examples/Patil%20C3H8%20(1987).csv) file was used.
-
-**Output**
-
-You can see that the shell script generated multiple plots at once.
-
-<img src="https://github.com/wjgoarxiv/PydTfinder/blob/345f915ba3b55334842d471b7aed01c7faf3cdca/run_examples/advanced_usage/result_files/Generated_files.png" height="60%" width="60%">
-
-See the generated images in [here](https://github.com/wjgoarxiv/PydTfinder/tree/main/run_examples/advanced_usage/result_files).
-
 
 ## **Contact**
 If you have any questions or suggestions, please visit the GitHub repository at https://github.com/wjgoarxiv/pydtfinder for more information.
@@ -165,3 +140,45 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## **Pull requests**
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+<br/>
+
+## EXTRAS
+> ## **EXTRA 1: For advanced users**
+
+> ### **Automating your process!**
+>> Get multiple plots at once.
+
+> By utilizing the shell script, you can get multiple plots at once. 
+> I've prepared the example shell script in the `PydTfinder/run_examples/advanced_usage/` folder. 
+> Download the [`automation_script_example.sh`](https://github.com/wjgoarxiv/PydTfinder/blob/e9f406fee0f931369474a524b5531e398e2d96cd/run_examples/advanced_usage/automation_script_example.sh). Consecutively, authorize it to be executable by typing the below command in the terminal.
+
+> ```
+> chmod +x automation_script_example.sh
+> ```
+
+> Then, you can run the shell script by typing the below command in the terminal.
+
+> ```
+> ./automation_script_example.sh
+> ```
+
+> ### **Automation results**
+> In the demo run, the [`Patil C3H8 (1987).csv`](https://github.com/wjgoarxiv/PydTfinder/blob/e9f406fee0f931369474a524b5531e398e2d96cd/csv_examples/Patil%20C3H8%20(1987).csv) file was used.
+
+> **Output**
+ 
+> You can see that the shell script generated multiple plots at once.
+
+> <img src="https://github.com/wjgoarxiv/PydTfinder/blob/345f915ba3b55334842d471b7aed01c7faf3cdca/run_examples/advanced_usage/result_files/Generated_files.png" height="60%" width="60%">
+
+> See the generated images in [here](https://github.com/wjgoarxiv/PydTfinder/tree/main/run_examples/advanced_usage/result_files).
+
+> ## EXTRA 2: How did I make [moving gifs](https://github.com/wjgoarxiv/PydTfinder/blob/fe57b9ed7bb89a4b61653fdecc586cf836261b9c/NP_anime.gif)?
+> The recipe I made the [moving gifs](https://github.com/wjgoarxiv/PydTfinder/blob/fe57b9ed7bb89a4b61653fdecc586cf836261b9c/delT_anime.gif) is:
+> ```
+> #!/bin/bash
+> convert $(ls *.png | sort -V) -delay 1 forward.gif;
+> gifsicle --unoptimize forward.gif forward.gif "#-0-1" > composition.gif
+> ```
+> Before you run that, you will need to type `brew install ImageMagick` and `brew install gifsicle`.
