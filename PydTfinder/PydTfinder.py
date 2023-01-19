@@ -37,7 +37,7 @@ parser.add_argument('-n', '--num_point', type=int, default=10, help='The number 
 parser.add_argument('-o', '--output', type=str, default='png', help='The file type of the output file. The options are: png, pdf, svg, and eps (default = png)')
 parser.add_argument('-d', '--directory', type=str, default='./', help='The directory location of the csv file (default = ./')
 parser.add_argument('-l', '--legend', type=str, default='Your Phase EQ input', help='The legend title of your Phase EQ input data (default = Your Phase EQ input)')
-parser.add_argument('-v', '--version', action='version', version='%(prog)s 1.1.0')
+parser.add_argument('-v', '--version', action='version', version='%(prog)s 1.1.1')
 
 # Read the arguments
 args = parser.parse_args()
