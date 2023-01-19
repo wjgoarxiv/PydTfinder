@@ -54,4 +54,4 @@ INFO Your desired temperature at 1.60 MPa is 294.07 K (T = 300.27 K - ΔT = 6.20
 INFO Your desired temperature at 2.24 MPa is 296.50 K (T = 302.70 K - ΔT = 6.20 K)
 
 
-INFO The figure is saved as "DeltaT=6.2K.png"
+INFO The figure is saved as "PLOT_DeltaT=6.2K_Deg=3_NP=4_Legend="Hydrogen Sulfide (Bond and Russel (1949))".png"
