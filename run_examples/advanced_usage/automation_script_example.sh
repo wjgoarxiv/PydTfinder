@@ -10,7 +10,7 @@ do
 	echo 0 | python3 PydTfinder.py -it csv -dt $DT -l delT_modifications_${DT}K
 done
 
-# LOOP 2: the number of points modifications
+# LOOP 2: The number of points modifications
 for NP in {5..10} # Manipulate the number of points here 
 do
 	echo 0 | python3 PydTfinder.py -it csv -n $NP -l NP_modifications_${NP}points
