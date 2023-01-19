@@ -2,9 +2,9 @@ from setuptools import setup
 
 setup(
 	  name='PydTfinder', 
-	  version='1.0.0',  
+	  version='1.1.0',  
 	  description='::A tool to find the phase eq temperature at a given pressure with a given ΔT value::',
-	  long_description= 'Reupload', 
+	  long_description= 'Added useful features for the user.', 
 	  author='wjgoarxiv',
 	  author_email='woo_go@yahoo.com',
 	  url='https://pypi.org/project/PydTfinder/',
