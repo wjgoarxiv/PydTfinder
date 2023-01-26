@@ -146,7 +146,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## EXTRAS
 > ## **EXTRA 1: For advanced users**
 
-> ### **Automating your process!**
+> ### **Automate your process!**
 >> Get multiple plots at once.
 
 > By utilizing the shell script, you can get multiple plots at once. 
