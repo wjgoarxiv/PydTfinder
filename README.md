@@ -1,6 +1,8 @@
 # **PydTfinder**
 > ::A tool to find the phase equilibrium temperature at a given pressure with a given ΔT value::
 
+<img src="https://github.com/wjgoarxiv/PydTfinder/blob/31d9c586864597e476f9f0ecd61039ddc4397ad9/LOGO.png"/>
+
 <a href="https://www.buymeacoffee.com/woojingo" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 120px !important;" ></a>
 
 **PydTfinder** is a cutting-edge and user-friendly tool that makes it easy to pinpoint the precise temperature and pressure points where the phase equilibrium shifting occurs in your system. If you're working with <u>Hydrate-Liquid-Vapor (HLV) equilibrium</u> systems, PydTfinder is the perfect tool to help you find the exact equilibrium point of interest you need. By utilizing a temperature difference input and a highly accurate polynomial regression algorithm, PydTfinder is able to <u>identify the precise points of phase transition with pinpoint accuracy</u>. This powerful tool also offers a wide range of customization options, including `manual input`, `csv file input`, `output type`, `degree of regression`, `number of points` displayed in the plot, and `directory location` of the csv file, allowing you to tailor the tool to your specific needs. For researchers, engineers, and scientists working in the field of thermodynamics, phase equilibrium, and phase transition, PydTfinder is an essential tool that will save you time and increase your productivity.
